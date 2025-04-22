@@ -1,0 +1,188 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me | Innulaa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #fff0f5;
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+    }
+
+    h2 {
+      color: #e75480;
+      font-weight: bold;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .info-box {
+      background-color: #ffe4ec;
+      border-radius: 15px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .btn-cv {
+      background-color: #ff99cc;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 20px;
+      margin-top: 20px;
+    }
+
+    .btn-cv:hover {
+      background-color: #e57db3;
+    }
+
+    .navbar {
+      background-color: #f48fb1 !important;
+    }
+
+    .navbar-nav .nav-link {
+      color: white !important;
+    }
+
+    .navbar-nav .nav-link.active {
+      color: #ffebf4 !important;
+      font-weight: 600;
+    }
+
+    footer {
+      background-color: #f48fb1;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.5rem;
+    }
+
+    .footer-icons a:hover {
+      color: #ffe0f0;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-light sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand text-white fw-bold" href="#">Innulaa</a>
+    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="service.html">Service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="skill.html">Skill</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="experience.html">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="contact.html">Contact</a>
+        </li>
+      </ul>      
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5 mb-5">
+  <div class="text-center">
+    <small class="text-muted">Discover</small>
+    <h2>About Me</h2>
+  </div>
+
+  <div class="row align-items-center mt-4">
+    <div class="col-md-4 text-center">
+      <img src="intan.jpeg" class="img-fluid rounded-circle" alt="intan.jpg" style="width: 250px; height: 250px; object-fit: cover;">
+    </div>
+    <div class="col-md-8">
+      <p>Hello! I'm a passionate and creative individual with a love for art, design, and coding. I enjoy blending aesthetics with functionality to create memorable experiences. ✨</p>
+
+      <div class="info-box">
+        <p><strong>Name:</strong> Your Name</p>
+        <p><strong>Age:</strong> 22</p>
+        <p><strong>Address:</strong> Your Address</p>
+        <p><strong>Github:</strong> <a href="#">github.com/yourusername</a></p>
+        <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/yourprofile</a></p>
+        <p><strong>Phone:</strong> 123-456-7890</p>
+        <p><strong>Gmail:</strong> yourmail@gmail.com</p>
+        <p><strong>Experience:</strong> 3+ Years in Graphic Design</p>
+
+        <button class="btn-cv" onclick="showCV()">Download CV</button>
+      </div>
+
+      <div id="cvImage" class="mt-4" style="display: none;">
+        <img src="CV.png" alt="CV Preview" class="img-fluid">
+        <a href="CV.pdf" download class="btn btn-success mt-2">Click here to download</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="container py-5">
+    <h3 class="text-center mb-4 section-title">Resume</h3>
+    <p class="text-center">I am currently a Senior Developer since 2023, responsible for leading development projects, optimizing code, and ensuring the scalability and performance of web applications. Prior to this, I worked as a Junior Designer from 2021 to 2022, where I collaborated with teams to design visual assets for web and mobile platforms, focusing on user interface and experience. I am also pursuing a Bachelor of Computer Science degree, expected to graduate in 2024, where I specialize in software development and data analysis. In addition, I completed a Design Bootcamp in 2019 to enhance my design skills and broaden my expertise in graphic and UI design.</p>
+  
+    <div class="row">
+      <div class="col-md-6">
+        <h5 class="fw-bold">Professional Experience</h5>
+        <ul>
+          <li><strong>Senior Developer</strong> - 2023-Present</li>
+          <li><strong>Junior Designer</strong> - 2021-2022</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h5 class="fw-bold">Education</h5>
+        <ul>
+          <li><strong>Bachelor of Computer Science</strong> - 2020-2024</li>
+          <li><strong>Design Bootcamp</strong> - 2019</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="text-white py-4">
+  <div class="container text-center">
+    <p class="mb-2 fw-bold">© 2024 Innulaa Portfolio</p>
+    <div class="footer-icons d-flex justify-content-center">
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function showCV() {
+    document.getElementById("cvImage").style.display = "block";
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
